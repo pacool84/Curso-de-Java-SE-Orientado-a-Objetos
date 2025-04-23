@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello and welcome!");
 
-        Doctor myDoctor = new Doctor(); //Declarando e instanciando mi objeto
+        Doctor myDoctor = new Doctor("Emiliano Mejia"); //Declarando e instanciando mi objeto
         myDoctor.name = "Paulina López";
         myDoctor.showName();
     }
