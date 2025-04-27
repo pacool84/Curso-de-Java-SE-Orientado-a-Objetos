@@ -1,10 +1,12 @@
 package ui;
+
 import java.util.Scanner;
 
 public class UIMenu {
-    static void showMenu() {
+
+    public static void showMenu(){
         System.out.println("Welcome to My Appointments");
-        System.out.println("Selecciona la opción deseada:");
+        System.out.println("Selecciona la opción deseada");
 
         int response = 0;
         do {
@@ -15,22 +17,25 @@ public class UIMenu {
             Scanner sc = new Scanner(System.in);
             response = Integer.valueOf(sc.nextLine());
 
-            switch (response) {
+            switch (response){
                 case 1:
                     System.out.println("Doctor");
                     break;
                 case 2:
                     response = 0;
                     showPatientMenu();
+
+                    break;
                 case 0:
-                    System.out.println("Saliendo...");
+                    System.out.println("Thank you for you visit");
                     break;
                 default:
                     System.out.println("Please select a correct answer");
             }
-        } while (response != 0);
+        }while (response != 0);
     }
-    static void showPatientMenu() {
+
+    static void showPatientMenu(){
         int response = 0;
         do {
             System.out.println("\n\n");
@@ -42,19 +47,17 @@ public class UIMenu {
             Scanner sc = new Scanner(System.in);
             response = Integer.valueOf(sc.nextLine());
 
-            switch (response) {
+            switch (response){
                 case 1:
-                    System.out.println("Book an appointment");
+                    System.out.println("::Book an appointment");
                     break;
                 case 2:
-                    System.out.println("My appointments");
+                    System.out.println("::My appointments");
                     break;
                 case 0:
                     showMenu();
                     break;
-                default:
-                    System.out.println("Please select a correct answer");
             }
-        } while (response != 0);
+        }while (response != 0);
     }
 }
