@@ -14,6 +14,12 @@ public class Main {
 //        Doctor myDoctorSebas = new Doctor();
 //        myDoctor.showId();
 
-        showMenu();
+//        showMenu();
+
+        Doctor myOverChargeDoctor = new Doctor("Paulina Lopez", "Dentista");
+        myOverChargeDoctor.showId();
+        myOverChargeDoctor.showName();
+        myOverChargeDoctor.showSpeciality();
+
     }
 }
