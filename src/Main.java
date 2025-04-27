@@ -12,6 +12,6 @@ public class Main {
         Doctor myDoctorSebas = new Doctor();
         myDoctor.showId();
 
-
+        UIMenu.showMenu();
     }
 }
