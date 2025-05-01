@@ -21,5 +21,8 @@ public class Main {
         myOverChargeDoctor.showName();
         myOverChargeDoctor.showSpeciality();
 
+        Patient myPatient = new Patient("Sebastian Lopez", "5528886165");
+        myPatient.showPatientInfo();
+
     }
 }
