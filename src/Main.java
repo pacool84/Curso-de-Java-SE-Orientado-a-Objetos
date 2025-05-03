@@ -21,10 +21,15 @@ public class Main {
         myOverChargeDoctor.showName();
         myOverChargeDoctor.showSpeciality();
 
-        Patient myPatient = new Patient("Sebastian Lopez", "5528886165");
-        myPatient.showPatientInfo();
+//        Patient myPatient = new Patient("Sebastian Lopez", "5528886165");
+//        myPatient.showPatientInfo();
+//
+//        System.out.println(myPatient.name = "Mateo Hernandez");
 
-        System.out.println(myPatient.name = "Mateo Hernandez");
+        Patient myPatient = new Patient("Brenda Rosales", "5528886165");
+        myPatient.setWeight(70.5);
+        myPatient.setPhoneNumber("5528886165");
+        System.out.println(myPatient.getName() + " " + myPatient.getPhoneNumber() + " " + myPatient.getWeight());
 
     }
 }
