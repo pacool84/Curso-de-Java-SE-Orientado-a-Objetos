@@ -1,14 +1,14 @@
 public class Patient {
     //Atributos
     static int id = 0;
-    String name;
+    private String name;
     String email;
     String address;
     String phoneNumber;
     String birthday;
-    String weight;
+    double weight;
     double height;
-    double blood;
+    String blood;
 
     //Constructor
     Patient(String name, String phoneNumber){

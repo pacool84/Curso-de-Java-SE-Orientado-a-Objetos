@@ -24,5 +24,7 @@ public class Main {
         Patient myPatient = new Patient("Sebastian Lopez", "5528886165");
         myPatient.showPatientInfo();
 
+        System.out.println(myPatient.name = "Mateo Hernandez");
+
     }
 }
