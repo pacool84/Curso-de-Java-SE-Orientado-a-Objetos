@@ -1,3 +1,5 @@
+import java.util.Date;
+
 import static ui.UIMenu.*;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -20,6 +22,16 @@ public class Main {
         myOverChargeDoctor.showId();
         myOverChargeDoctor.showName();
         myOverChargeDoctor.showSpeciality();
+
+        myOverChargeDoctor.addAvailableAppointment(new Date(), "16:00");
+        myOverChargeDoctor.addAvailableAppointment(new Date(), "17:00");
+        myOverChargeDoctor.addAvailableAppointment(new Date(), "17:30");
+
+        System.out.println(myOverChargeDoctor.getAvailableAppointments());
+
+        for(Doctor.AvailableAppointment timeAvailable : myOverChargeDoctor.getAvailableAppointments()){
+            System.out.println("Horario Disponible: " + timeAvailable.getDate() + " " + timeAvailable.getTime());
+        }
 
 //        Patient myPatient = new Patient("Sebastian Lopez", "5528886165");
 //        myPatient.showPatientInfo();
