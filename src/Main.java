@@ -19,8 +19,8 @@ public class Main {
 //        showMenu();
 
         Doctor myOverChargeDoctor = new Doctor("Paulina Lopez", "Dentista");
-        myOverChargeDoctor.showId();
-        myOverChargeDoctor.showName();
+//        myOverChargeDoctor.showId();
+//        myOverChargeDoctor.showName();
         myOverChargeDoctor.showSpeciality();
 
         myOverChargeDoctor.addAvailableAppointment(new Date(), "16:00");
@@ -61,8 +61,8 @@ public class Main {
         System.out.println(myVariablePatient.getName()); // Sara Moreno
         System.out.println(myVariablePatient2.getName()); // Sara Moreno
 
-
-
-
+    //Validando la sobre escritura del metodo toString()
+        Patient myOverWritePatient = new Patient("Zury", "zury@hotmail.com");
+        System.out.println(myOverWritePatient);
     }
 }

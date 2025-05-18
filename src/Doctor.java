@@ -2,33 +2,25 @@ import java.sql.Time;
 import java.util.ArrayList;
 import java.util.Date;
 
-public class Doctor {
+public class Doctor extends User {
     //Atributos
-    static int id = 0; //Autoincrement
-    private String name;
-    private String email;
     private String speciality;
 
-    Doctor(){
-        System.out.println("Se declara el metodo constructor");
-        System.out.println("Aunque no es NECESARIO");
-    }
+//    Doctor(){
+//        System.out.println("Se declara el metodo constructor");
+//        System.out.println("Aunque no es NECESARIO");
+//    }
 
-    Doctor(String name, String speciality){ //Ahora tengo dos opciones de poder construir el objeto
-//        System.out.println("El nombre del doctor es " + name);
-        id++;
-        this.name = name;
+    Doctor(String name, String email){ //Ahora tengo dos opciones de poder construir el objeto
+//      System.out.println("El nombre del doctor es " + name);
+        super(name, email); //Llamando al constructor de la clase padre
         this.speciality = speciality;
 
     }
     //Metodos ó Comportamientos
-    public void showName() {
-        System.out.println("El nombre del Doctor es: " + name);
-    }
-
-    public void showId() {
-        System.out.println("El id del doctor es: " + id);
-    }
+//    public void showName() {
+//        System.out.println("El nombre del Doctor es: " + name);
+//    }
 
     public void showSpeciality() {
         System.out.println("La especialidad del doctor es: " + speciality);
@@ -83,5 +75,13 @@ public class Doctor {
         public void setTime(String time) {
             this.time = time;
         }
+    }
+
+    public String getSpeciality() {
+        return speciality;
+    }
+
+    public void setSpeciality(String speciality) {
+        this.speciality = speciality;
     }
 }
