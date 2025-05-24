@@ -1,3 +1,5 @@
+package model;
+
 public class User {
     private int id;
     private String name;
@@ -59,9 +61,9 @@ public class User {
     }
 
     //Sobre escritura del método toString
-    @Override // Esto nos dice que estamos sobre escribiendo el método toString el cual NO es el que pertenece a la clase User si no a la superclase Object
+    @Override // Esto nos dice que estamos sobre escribiendo el método toString el cual NO es el que pertenece a la clase model.User si no a la superclase Object
     public String toString() {
 //        return super.toString(); Aqui hacemos la referencia con super a la super clase object
-        return "User: " + name + "Email: " + email + "\nAddress: " + address + ". Phone: " + phoneNumber;
+        return "model.User: " + name + "Email: " + email + "\nAddress: " + address + ". Phone: " + phoneNumber;
     }
 }

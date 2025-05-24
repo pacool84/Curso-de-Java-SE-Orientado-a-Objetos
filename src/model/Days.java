@@ -1,4 +1,4 @@
-import static java.util.Calendar.MONDAY;
+package model;
 
 public class Days {
     public enum Day {

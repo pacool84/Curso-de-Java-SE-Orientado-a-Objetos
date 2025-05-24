@@ -1,4 +1,5 @@
-import java.sql.Time;
+package model;
+
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -6,12 +7,12 @@ public class Doctor extends User {
     //Atributos
     private String speciality;
 
-//    Doctor(){
+//    model.Doctor(){
 //        System.out.println("Se declara el metodo constructor");
 //        System.out.println("Aunque no es NECESARIO");
 //    }
 
-    Doctor(String name, String email){ //Ahora tengo dos opciones de poder construir el objeto
+    public Doctor(String name, String email){ //Ahora tengo dos opciones de poder construir el objeto
 //      System.out.println("El nombre del doctor es " + name);
         super(name, email); //Llamando al constructor de la clase padre
         this.speciality = speciality;
@@ -19,7 +20,7 @@ public class Doctor extends User {
     }
     //Metodos ó Comportamientos
 //    public void showName() {
-//        System.out.println("El nombre del Doctor es: " + name);
+//        System.out.println("El nombre del model.Doctor es: " + name);
 //    }
 
     public void showSpeciality() {

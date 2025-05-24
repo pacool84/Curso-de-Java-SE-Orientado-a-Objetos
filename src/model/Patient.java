@@ -1,3 +1,5 @@
+package model;
+
 public class Patient extends User {
     //Atributos
     private String birthday;
@@ -6,8 +8,8 @@ public class Patient extends User {
     private String blood;
 
     //Constructor, se encarga de definir los atributos mandatorios de cada objeto
-    Patient(String name, String phoneNumber){
-        super(name, phoneNumber); //Llamando al constructor de la clase padre
+    public Patient(String name, String email){
+        super(name, email); //Llamando al constructor de la clase padre
     }
 
     //Metodos
@@ -59,6 +61,6 @@ public class Patient extends User {
 
     @Override
     public String toString() {
-        return super.toString() + "\nAge: " + birthday + "\nWeigth: " + getWeight() + "\nHeight: " + getHeight() + "\nBlood: " + blood;
+        return super.toString() + "\nAge: " + birthday + "\nWeigh: " + getWeight() + "\nHeight: " + getHeight() + "\nBlood: " + blood;
     }
 }

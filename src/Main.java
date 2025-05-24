@@ -1,6 +1,7 @@
-import java.util.Date;
+import model.Doctor;
+import model.Patient;
 
-import static ui.UIMenu.*;
+import java.util.Date;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -8,12 +9,12 @@ public class Main {
     public static void main(String[] args) {
 //        System.out.println("Hello and welcome!");
 //
-//        Doctor myDoctor = new Doctor(); //Declarando e instanciando mi objeto
+//        model.Doctor myDoctor = new model.Doctor(); //Declarando e instanciando mi objeto
 //        myDoctor.name = "Paulina López";
 //        myDoctor.showName();
 //        myDoctor.showId();
 //
-//        Doctor myDoctorSebas = new Doctor();
+//        model.Doctor myDoctorSebas = new model.Doctor();
 //        myDoctor.showId();
 
 //        showMenu();
@@ -33,7 +34,7 @@ public class Main {
             System.out.println("Horario Disponible: " + timeAvailable.getDate() + " " + timeAvailable.getTime());
         }
 
-//        Patient myPatient = new Patient("Sebastian Lopez", "5528886165");
+//        model.Patient myPatient = new model.Patient("Sebastian Lopez", "5528886165");
 //        myPatient.showPatientInfo();
 //
 //        System.out.println(myPatient.name = "Mateo Hernandez");
@@ -56,8 +57,8 @@ public class Main {
 
         myVariablePatient = myVariablePatient2; //Se asigna la referencia de memoria de myVariablePatient2 a myVariablePatient
 
-        System.out.println("La referencia en memoria es: " + myVariablePatient); // Patient@65b3120a
-        System.out.println("La referencia en memoria es: " + myVariablePatient2); // Patient@65b3120a
+        System.out.println("La referencia en memoria es: " + myVariablePatient); // model.Patient@65b3120a
+        System.out.println("La referencia en memoria es: " + myVariablePatient2); // model.Patient@65b3120a
         System.out.println(myVariablePatient.getName()); // Sara Moreno
         System.out.println(myVariablePatient2.getName()); // Sara Moreno
 
