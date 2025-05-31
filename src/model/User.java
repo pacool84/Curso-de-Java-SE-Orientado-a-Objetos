@@ -1,6 +1,7 @@
 package model;
 
-public class User {
+//Al agregar "abstract" a la clase User, estamos indicando que esta clase no puede ser instanciada, es decir, no se pueden crear objetos de esta clase desde fuera de ella.
+public abstract class User {
     private int id;
     private String name;
     private String email;
