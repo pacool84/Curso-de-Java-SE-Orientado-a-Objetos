@@ -67,4 +67,8 @@ public abstract class User {
 //        return super.toString(); Aqui hacemos la referencia con super a la super clase object
         return "model.User: " + name + "Email: " + email + "\nAddress: " + address + ". Phone: " + phoneNumber;
     }
+
+    // Este método es abstracto, por lo que no tiene implementación aquí.
+    // Las subclases deben proporcionar su propia implementación.
+    public abstract void showDataUser();
 }

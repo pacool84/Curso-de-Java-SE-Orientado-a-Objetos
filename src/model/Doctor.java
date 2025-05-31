@@ -18,6 +18,13 @@ public class Doctor extends User {
         this.speciality = speciality;
 
     }
+
+    @Override
+    public void showDataUser() {
+        System.out.println("Hospital: Cruz Roja");
+        System.out.println("Departamento: Odontología");
+
+    }
     //Metodos ó Comportamientos
 //    public void showName() {
 //        System.out.println("El nombre del model.Doctor es: " + name);
