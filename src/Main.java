@@ -29,7 +29,7 @@ public class Main {
 
         System.out.println(myOverChargeDoctor.getAvailableAppointments());
 
-        for(Doctor.AvailableAppointment timeAvailable : myOverChargeDoctor.getAvailableAppointments()){
+        for (Doctor.AvailableAppointment timeAvailable : myOverChargeDoctor.getAvailableAppointments()) {
             System.out.println("Horario Disponible: " + timeAvailable.getDate() + " " + timeAvailable.getTime());
         }
 
@@ -61,7 +61,7 @@ public class Main {
         System.out.println(myVariablePatient.getName()); // Sara Moreno
         System.out.println(myVariablePatient2.getName()); // Sara Moreno
 
-    //Validando la sobre escritura del metodo toString()
+        //Validando la sobre escritura del metodo toString()
         Patient myOverWritePatient = new Patient("Zury", "zury@hotmail.com");
         System.out.println(myOverWritePatient);
 
@@ -94,5 +94,5 @@ public class Main {
     };
 
     //Falta corregir este error de compilacion, no se puede crear un objeto de una interfaz
-   // mySchedulable.schedule(new Date(), "10:00 AM");
+    // mySchedulable.schedule(new Date(), "10:00 AM");
 }

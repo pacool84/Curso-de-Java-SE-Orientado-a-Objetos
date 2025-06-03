@@ -16,7 +16,7 @@ public class UIMenu {
     public static Doctor doctorLogged;
     public static Patient patientLogged;
 
-    public static void showMenu(){
+    public static void showMenu() {
         System.out.println("Welcome to My Appointments");
         System.out.println("Selecciona la opción deseada");
 
@@ -29,7 +29,7 @@ public class UIMenu {
             Scanner sc = new Scanner(System.in);
             response = Integer.valueOf(sc.nextLine());
 
-            switch (response){
+            switch (response) {
                 case 1:
                     System.out.println("model.Doctor");
                     response = 0;
@@ -37,7 +37,7 @@ public class UIMenu {
                     break;
                 case 2:
                     response = 0;
-                   // showPatientMenu();
+                    // showPatientMenu();
                     authUser(2);
                     break;
                 case 0:
@@ -46,7 +46,7 @@ public class UIMenu {
                 default:
                     System.out.println("Please select a correct answer");
             }
-        }while (response != 0);
+        } while (response != 0);
     }
 
     private static void authUser(int userType) {
@@ -69,9 +69,9 @@ public class UIMenu {
             Scanner sc = new Scanner(System.in);
             String email = sc.nextLine();
 
-            if(userType == 1) {
-                for(Doctor doc: doctors){
-                    if(doc.getEmail().equals(email)){
+            if (userType == 1) {
+                for (Doctor doc : doctors) {
+                    if (doc.getEmail().equals(email)) {
                         System.out.println("Welcome " + doc.getName());
                         emailCorrect = true;
 
@@ -84,9 +84,9 @@ public class UIMenu {
                 }
             }
 
-            if(userType == 2) {
-                for(Patient pat: patients){
-                    if(pat.getEmail().equals(email)){
+            if (userType == 2) {
+                for (Patient pat : patients) {
+                    if (pat.getEmail().equals(email)) {
                         System.out.println("Welcome " + pat.getName());
                         emailCorrect = true;
 
@@ -99,10 +99,12 @@ public class UIMenu {
                 }
             }
 
-        }while (!emailCorrect);
-    };
+        } while (!emailCorrect);
+    }
 
-    static void showPatientMenu(){
+    ;
+
+    static void showPatientMenu() {
         int response = 0;
         do {
             System.out.println("\n\n");
@@ -114,11 +116,11 @@ public class UIMenu {
             Scanner sc = new Scanner(System.in);
             response = Integer.valueOf(sc.nextLine());
 
-            switch (response){
+            switch (response) {
                 case 1:
                     System.out.println("::Book an appointment");
                     for (int i = 0; i < 3; i++) {
-                        System.out.println( i+1 + ". " + MONTHS[i]);
+                        System.out.println(i + 1 + ". " + MONTHS[i]);
                     }
                     break;
                 case 2:
@@ -128,6 +130,6 @@ public class UIMenu {
                     showMenu();
                     break;
             }
-        }while (response != 0);
+        } while (response != 0);
     }
 }
