@@ -8,6 +8,8 @@ import java.util.Date;
 public class Doctor extends User {
     //Atributos
     private String speciality;
+    private ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>(); //Colección de citas disponibles
+
 
 //    model.Doctor(){
 //        System.out.println("Se declara el metodo constructor");
@@ -36,7 +38,6 @@ public class Doctor extends User {
         System.out.println("La especialidad del doctor es: " + speciality);
     }
 
-    ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>(); //Colección de citas disponibles
 
     public void addAvailableAppointment(String date, String time) {
         availableAppointments.add(new Doctor.AvailableAppointment(date, time));
@@ -75,11 +76,11 @@ public class Doctor extends User {
             this.id = id;
         }
 
-        public Date getDate() {
+        public Date getDate(String DATE) {
             return date;
         }
 
-        public String getDate(String DATE) {
+        public String getDate() {
             return format.format(date);
         }
 
