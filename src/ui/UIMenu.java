@@ -79,6 +79,7 @@ public class UIMenu {
                         doctorLogged = doc;
 
                         //Mostrar el menu del doctor
+                        UIDoctorMenu.showDoctorMenu();
 
                     }
                 }

@@ -2,6 +2,8 @@ import model.*;
 
 import java.util.Date;
 
+import static ui.UIMenu.showMenu;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -16,16 +18,16 @@ public class Main {
 //        model.Doctor myDoctorSebas = new model.Doctor();
 //        myDoctor.showId();
 
-//        showMenu();
+        showMenu();
 
         Doctor myOverChargeDoctor = new Doctor("Paulina Lopez", "Dentista");
 //        myOverChargeDoctor.showId();
 //        myOverChargeDoctor.showName();
         myOverChargeDoctor.showSpeciality();
 
-        myOverChargeDoctor.addAvailableAppointment(new Date(), "16:00");
-        myOverChargeDoctor.addAvailableAppointment(new Date(), "17:00");
-        myOverChargeDoctor.addAvailableAppointment(new Date(), "17:30");
+//        myOverChargeDoctor.addAvailableAppointment(new Date(), "16:00");
+//        myOverChargeDoctor.addAvailableAppointment(new Date(), "17:00");
+//        myOverChargeDoctor.addAvailableAppointment(new Date(), "17:30");
 
         System.out.println(myOverChargeDoctor.getAvailableAppointments());
 
